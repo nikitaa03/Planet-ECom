@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Shop</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-weight: bold;
+        color: white;
+      }
+      body {
+        background: radial-gradient(
+          circle at 24.1% 68.8%,
+          rgb(50, 50, 50) 0%,
+          rgb(0, 0, 0) 99.4%
+        );
+
+        background-size: cover;
+        font-family: "Montserrat", sans-serif;
+        /*height: 100vh;*/
+      }
+      header {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 130px;
+        align-items: center;
+        border-bottom: 2px solid black;
+      }
+      ul {
+        display: flex;
+        list-style-type: none;
+      }
+      ul li a {
+        margin: 0px 5px;
+        border: 2px solid white;
+        padding: 3px 10px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .logo {
+        border: 2px solid white;
+        padding: 10px 10px;
+        font-size: 35px;
+      }
+      .signup {
+        background-color: white;
+        color: black;
+      }
+      .signup:hover {
+        background-color: black;
+        color: white;
+      }
+      .content {
+        display: flex;
+        height: 90vh;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0px 130px;
+      }
+      .content h2 {
+        font-size: 32px;
+        text-transform: uppercase;
+      }
+      .content p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 31px;
+        margin: 30px 10px;
+      }
+      .contentleft {
+        flex: 1;
+        align-items: center;
+      }
+      .contentmid {
+        flex: 2.5;
+      }
+      .contentright {
+        flex: 2.5;
+      }
+      .image {
+        padding-left: 60px;
+        height: 500px;
+      }
+      .btn {
+        padding: 15px 30px;
+        background-color: black;
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        text-transform: uppercase;
+      }
+      .btn:hover {
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Planet</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Offers</a></li>
+          <li><a href="#">Buy Now</a></li>
+          <li><a href="#">Sell Now</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#" class="signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="content">
+        <div class="contentleft">
+          <h2>Mercury</h2>
+        </div>
+        <div class="contentmid">
+          <p>
+            Mercury, the innermost planet of the solar system and the eighth in
+            size and mass. Its closeness to the Sun and its smallness make it
+            the most elusive of the planets visible to the unaided eye. Because
+            its rising or setting is always within about two hours of the Sun’s,
+            it is never observable when the sky is fully dark. Mercury is
+            designated by the symbol ☿.<br />
+            Mercury is one of four terrestrial planets in the Solar System,
+            which means it is a rocky body like Earth. It is the smallest planet
+            in the Solar System, with an equatorial radius of 2,439.7 kilometres
+            (1,516.0 mi).[4] Mercury is also smaller—albeit more massive—than
+            the largest natural satellites in the Solar System, Ganymede and
+            Titan. Mercury consists of approximately 70% metallic and 30%
+            silicate material.
+          </p>
+          <button class="btn">Buy Now</button>
+        </div>
+        <div class="contentright">
+          <img src="./assets/mercury.png" class="image" alt="" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="contentleft">
+          <h2>Venus</h2>
+        </div>
+        <div class="contentmid">
+          <p>
+            Venus is the second planet from the Sun. It is a terrestrial planet
+            and is the closest in mass and size to its orbital neighbour Earth.
+            Venus is notable for having the densest atmosphere of the
+            terrestrial planets, composed mostly of carbon dioxide with a thick,
+            global sulfuric acid cloud cover. At the surface it has a mean
+            temperature of 737 K (464 °C; 867 °F) and a pressure of 92 times
+            that of Earth's at sea level. These extreme conditions compress
+            carbon dioxide into a supercritical state close to Venus's surface.
+          </p>
+          <button class="btn">Buy Now</button>
+        </div>
+        <div class="contentright">
+          <img src="./assets/venus.png" class="image" alt="" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="contentleft">
+          <h2>Earth</h2>
+        </div>
+        <div class="contentmid">
+          <p>
+            Earth is the third planet from the Sun and the only astronomical
+            object known to harbor life. This is enabled by Earth being a water
+            world, the only one in the Solar System sustaining liquid surface
+            water. Almost all of Earth's water is contained in its global ocean,
+            covering 70.8% of Earth's crust. The remaining 29.2% of Earth's
+            crust is land, most of which is located in the form of continental
+            landmasses within Earth's land hemisphere. Most of Earth's land is
+            somewhat humid and covered by vegetation, while large sheets of ice
+            at Earth's polar deserts retain more water than Earth's groundwater,
+            lakes, rivers and atmospheric water combined. Earth's crust consists
+            of slowly moving tectonic plates, which interact to produce mountain
+            ranges, volcanoes, and earthquakes. Earth has a liquid outer core
+            that generates a magnetosphere capable of deflecting most of the
+            destructive solar winds and cosmic radiation.
+          </p>
+          <button class="btn">Buy Now</button>
+        </div>
+        <div class="contentright">
+          <img src="./assets/earth.png" class="image" alt="" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="contentleft">
+          <h2>Mars</h2>
+        </div>
+        <div class="contentmid">
+          <p>
+            Mars is the fourth planet from the Sun. The surface of Mars is
+            orange-red because it is covered in iron(III) oxide dust, giving it
+            the nickname "the Red Planet".[21][22] Mars is among the brightest
+            objects in Earth's sky, and its high-contrast albedo features have
+            made it a common subject for telescope viewing. It is classified as
+            a terrestrial planet and is the second smallest of the Solar
+            System's planets with a diameter of 6,779 km (4,212 mi). In terms of
+            orbital motion, a Martian solar day (sol) is equal to 24.5 hours,
+            and a Martian solar year is equal to 1.88 Earth years (687 Earth
+            days). Mars has two natural satellites that are small and irregular
+            in shape: Phobos and Deimos.
+          </p>
+          <button class="btn">Buy Now</button>
+        </div>
+        <div class="contentright">
+          <img src="./assets/venus.png" class="image" alt="" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="contentleft">
+          <h2>Jupiter</h2>
+        </div>
+        <div class="contentmid">
+          <p>
+            Jupiter is the fifth planet from the Sun and the largest in the
+            Solar System. A gas giant, Jupiter's mass is more than two and a
+            half times that of all the other planets in the Solar System
+            combined and slightly less than one one-thousandth the mass of the
+            Sun. Jupiter orbits the Sun at a distance of 5.20 AU (778.5 Gm) with
+            an orbital period of 11.86 years. It is the third brightest natural
+            object in the Earth's night sky after the Moon and Venus and has
+            been observed since prehistoric times. Its name derives from
+            Jupiter, the chief deity of ancient Roman religion.
+          </p>
+          <button class="btn">Buy Now</button>
+        </div>
+        <div class="contentright">
+          <img src="./assets/jupiter.png" class="image" alt="" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="contentleft">
+          <h2>Saturn</h2>
+        </div>
+        <div class="contentmid">
+          <p>
+            Saturn is the sixth planet from the Sun and the second-largest in
+            the Solar System, after Jupiter. It is a gas giant with an average
+            radius of about nine-and-a-half times that of Earth.[26][27] It has
+            only one-eighth the average density of Earth, but is over 95 times
+            more massive.[28][29][30] Even though Saturn is nearly the size of
+            Jupiter, Saturn has less than one-third of Jupiter's mass. Saturn
+            orbits the Sun at a distance of 9.59 AU (1,434 million km) with an
+            orbital period of 29.45 years.
+          </p>
+          <button class="btn">Buy Now</button>
+        </div>
+        <div class="contentright">
+          <img src="./assets/saturn.png" class="image" alt="" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="contentleft">
+          <h2>Uranus</h2>
+        </div>
+        <div class="contentmid">
+          <p>
+            Uranus is the seventh planet from the Sun. It is a gaseous
+            cyan-coloured ice giant. Most of the planet is made of water,
+            ammonia, and methane in a supercritical phase of matter, which in
+            astronomy is called 'ice' or volatiles. The planet's atmosphere has
+            a complex layered cloud structure and has the lowest minimum
+            temperature of 49 K (−224 °C; −371 °F) out of all the Solar System's
+            planets. It has a marked axial tilt of 82.23° with a retrograde
+            rotation period of 17 hours and 14 minutes. This means that in an
+            84-Earth-year orbital period around the Sun, its poles get around 42
+            years of continuous sunlight, followed by 42 years of continuous
+            darkness.
+          </p>
+          <button class="btn">Buy Now</button>
+        </div>
+        <div class="contentright">
+          <img src="./assets/uranus.png" class="image" alt="" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="contentleft">
+          <h2>Neptune</h2>
+        </div>
+        <div class="contentmid">
+          <p>
+            Neptune is the eighth and farthest known planet from the Sun. It is
+            the fourth-largest planet in the Solar System by diameter, the
+            third-most-massive planet, and the densest giant planet. It is 17
+            times the mass of Earth, and slightly more massive than fellow ice
+            giant Uranus. Neptune is denser and physically smaller than Uranus
+            because its greater mass causes more gravitational compression of
+            its atmosphere. Being composed primarily of gases and liquids, it
+            has no well-defined solid surface. The planet orbits the Sun once
+            every 164.8 years at an orbital distance of 30.1 astronomical units
+            (4.5 billion kilometres; 2.8 billion miles). It is named after the
+            Roman god of the sea and has the astronomical symbol ♆, representing
+            Neptune's trident.[f]
+          </p>
+          <button class="btn">Buy Now</button>
+        </div>
+        <div class="contentright">
+          <img src="./assets/neptune.png" class="image" alt="" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
